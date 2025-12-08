@@ -148,7 +148,7 @@ print(variable_remainder)
 print(variable_exp)
 print(variable_floor_div)
 
-#The radius of a circle is 30 meters.
+#The radius of a circle is 30 meters
 #1. Calculate the area of a circle and assign the value to a variable name of area_of_circle
 #2. Calculate the circumference of a circle and assign the value to a variable name of circum_of_circle
 #3. Take radius as user input and calculate the area.
