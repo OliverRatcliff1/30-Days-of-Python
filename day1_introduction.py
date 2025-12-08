@@ -23,7 +23,7 @@ print('Oliver') # Name
 print('Ratcliff') # Family Name 
 print('United Kingdom') # Country
 print('I am enjoying learning Python') # Statement
-# ---
+
 print(type(10))
 print(type(9.8))
 print(type(4-4j))
@@ -32,8 +32,7 @@ print(type(([1,2,3,4,5])))
 print(type({'Oliver', 'Python', 'United Kingdom'}))
 print(type({'name' :'Oliver'}))
 print(type((5.5,6.5,7.5,8.5)))
-# ---
-# ---
+
 print(type(10))
 print(type(3.5))
 print(type(4j))
