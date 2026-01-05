@@ -106,6 +106,59 @@ print(not not False) # False
 
 # Exercise
 
+age=23
+height=5.11
+complex_number=1+1j
+base_of_triangle=float(input('Enter base of triangle: '))
+height_of_triangle=float(input('Enter height of triangle: '))
+area_of_triangle=0.5*base_of_triangle*height_of_triangle
+print('The area of the triangle is:', area_of_triangle)
 
+side_a=float(input('Enter side A: '))
+side_b=float(input('Enter side B: '))
+side_c=float(input('Enter side C: '))
+perimeter=side_a+side_b+side_c
+print('The perimeter of the triangle is',perimeter)
+length=float(input('Enter length of rectangle: '))
+width=float(input('Enter width of rectangle: '))
+area_of_rectangle=length*width
+perimeter_of_rectangle=(2*(length+width))
+print('The area of the rectangle is', area_of_rectangle)
+print('The perimeter of the rectangle is', perimeter_of_rectangle)
 
+print(len('python') != len('dragon'))
+print('on' in 'python'and 'on' in 'dragon')
+print('jargon' in 'I hope this course is not full of jargon')
+print(type(str(float(len('python')))))
 
+#checking if a number is even or not (even numbers are divisible by 2 and remainder is 0)
+print(2%2==0, 4%2==0, 6%2==0, 9%2==0)
+number=int(input('enter a number'))
+if number%2==0:
+    print("the number is even")
+else:
+    print('the number is odd')
+
+print(7//3==int(2.7))
+
+print(type('10')==type(10))
+
+print(int(float('9.8'))==10)
+
+#Write a script that prompts the user to enter hours and rate per hour.
+hours=float(input('Enter hours:'))
+rate_per_hour=(float(input('Enter rate per hour:')))
+wage=hours*rate_per_hour
+print('Your wage for hours worked is:',wage)
+
+#Calculate the number of seconds a person can live.
+years_lived=int(input('Enter number of years lived:'))
+seconds_in_year=365*24*60*60
+seconds_lived=years_lived*seconds_in_year
+print('you have lived for', seconds_lived,'seconds!')
+
+print(1, 1**0, 1**1, 1**2, 1**3)
+print(2, 2**0, 2**1, 2**2, 2**3)
+print(3, 3**0, 3**1, 3**2, 3**3)
+print(4, 4**0, 4**1, 4**2, 4**3)
+print(5, 5**0, 5**1, 5**2, 5**3)
