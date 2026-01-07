@@ -109,15 +109,23 @@ pto = language[0:6:2] #
 print(pto) # pto
 
 # String Methods 
+
 # Capitalize - first letter a capital
 challenge='thirty days of python'
 print(challenge.capitalize())
-# Count - returns occurances 
+
+# Count() - returns occurances 
 hallenge = 'thirty days of python'
 print(challenge.count('y')) # 3
 print(challenge.count('y', 7, 14)) # 1
 print(challenge.count('th')) # 2
-#Endswith - checks if string ends with a specific ending
+
+# Endswith() - checks if string ends with a specific ending
 challenge = 'thirty days of python'
 print(challenge.endswith('on'))   # True
 print(challenge.endswith('tion')) # False
+
+# Expandtabs() - replaces tab character spaces
+challenge = 'thirty\tdays\tof\tpython'
+print(challenge.expandtabs())   # 'thirty  days    of      python'
+print(challenge.expandtabs(15)) # 'thirty    days      of        python'
