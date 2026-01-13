@@ -108,6 +108,8 @@ language = 'Python'
 pto = language[0:6:2] #
 print(pto) # pto
 
+
+
 # String Methods 
 
 # Capitalize - first letter a capital
@@ -129,3 +131,175 @@ print(challenge.endswith('tion')) # False
 challenge = 'thirty\tdays\tof\tpython'
 print(challenge.expandtabs())   # 'thirty  days    of      python'
 print(challenge.expandtabs(15)) # 'thirty    days      of        python'
+
+# Find() - returns the index of the first occurance of a substring (-1 if not found)
+challenge = 'thirty days of python'
+print(challenge.find('y'))  # 5
+print(challenge.find('th')) # 0
+
+# rfind() - returns the index of the last occurance of a substring(-1 if not found)
+challenge = 'thirty days of python'
+print(challenge.rfind('y'))  # 16
+print(challenge.rfind('th')) # 17
+
+# index() - Returns the lowest index of a substring
+challenge = 'thirty days of python'
+sub_string = 'da'
+print(challenge.index(sub_string))  # 7
+
+# rindex() - returns the highest index of a substring (reverse index)
+challenge = 'thirty days of python'
+sub_string = 'da'
+print(challenge.rindex(sub_string))  # 7
+print(challenge.rindex('on', 8)) # 19, the 8 means it ignores everything before it 
+text = "abc da xyz da"
+print(text.index("da"))   # 4
+print(text.rindex("da"))  # 11
+
+# Isalnum() - Checks alphanumeric character
+challenge = 'ThirtyDaysPython'
+print(challenge.isalnum()) # True
+challenge = '30DaysPython'
+print(challenge.isalnum()) # True
+challenge = 'thirty days of python'
+print(challenge.isalnum()) # False, space is not an alphanumeric character
+challenge = 'thirty days of python 2019'
+print(challenge.isalnum()) # False
+
+# isaplha() - checks if stroings elements are alphabet characters
+challenge = 'thirty days of python'
+print(challenge.isalpha()) # False, space is once again excluded
+challenge = 'ThirtyDaysPython'
+print(challenge.isalpha()) # True
+num = '123'
+print(num.isalpha())      # False
+
+# isdecimal() - Checks if all characters in a string are decimal
+challenge = 'thirty days of python'
+print(challenge.isdecimal())  # False
+challenge = '123'
+print(challenge.isdecimal())  # True
+challenge = '\u00B2'
+print(challenge.isdigit())   # False
+challenge = '12 3'
+print(challenge.isdecimal())  # False, space not allowed 
+
+# isdigit() - Checks if all characters in a string are numbers
+challenge = 'Thirty'
+print(challenge.isdigit()) # False
+challenge = '30'
+print(challenge.isdigit())   # True
+challenge = '\u00B2'
+print(challenge.isdigit())   # True
+
+# isnumeric() - Checks if all characters in a string are numbers or number related
+num = '10'
+print(num.isnumeric()) # True
+num = '\u00BD' # ½
+print(num.isnumeric()) # True
+num = '10.5'
+print(num.isnumeric()) # False
+
+# isidentifier() - Checks for a valid identifier - it checks if a string is a valid varible name 
+challenge = '30DaysOfPython'
+print(challenge.isidentifier()) # False, because it starts with a number
+challenge = 'thirty_days_of_python'
+print(challenge.isidentifier()) # True
+
+# islower() - Checks if all alphabet characters in the string are lowercase 
+challenge = 'thirty days of python'
+print(challenge.islower()) # True
+challenge = 'Thirty days of python'
+print(challenge.islower()) # False
+
+# isupper() - Checks if all alphabet characters in the string are uppercase
+challenge = 'thirty days of python'
+print(challenge.isupper()) #  False
+challenge = 'THIRTY DAYS OF PYTHON'
+print(challenge.isupper()) # True
+
+# join() - Returns a concatenated string 
+web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
+result = ' '.join(web_tech)
+print(result) # 'HTML CSS JavaScript React'
+
+# strip - Removes all given characters starting from the beginning and end of the string
+challenge = 'thirty days of pythoonnn'
+print(challenge.strip('noth')) # 'irty days of py'
+
+# replace - Replaces substring with a given string 
+challenge = 'thirty days of python'
+print(challenge.replace('python', 'coding')) # 'thirty days of coding'
+
+# split() - Splits the string, using given string or space as a separator
+challenge = 'thirty days of python'
+print(challenge.split()) # ['thirty', 'days', 'of', 'python']
+challenge = 'thirty, days, of, python'
+print(challenge.split(', ')) # ['thirty', 'days', 'of', 'python']
+
+# title() - Returns a title cased string
+challenge = 'thirty days of python'
+print(challenge.title()) # Thirty Days Of Python
+
+# swapcase - Converts upper to lower and lower to upper case 
+challenge = 'thirty days of python'
+print(challenge.swapcase())   # THIRTY DAYS OF PYTHON
+challenge = 'Thirty Days Of Python'
+print(challenge.swapcase())  # tHIRTY dAYS oF pYTHON
+
+# startswith() - Checks if String Starts with the Specific String
+challenge = 'thirty days of python'
+print(challenge.startswith('thirty')) # True
+
+challenge = '30 days of python'
+print(challenge.startswith('thirty')) # False
+
+
+# Exercises 
+
+name='Thirty', 'Days', 'Of', 'Python.'
+result2=' '.join(name)
+print(result2)
+name='Coding', 'For', 'All.'
+result3=' '.join(name)
+print(result3)
+
+company="Coding For All"
+print(company)
+print(len(company))
+print(company.lower())
+print(company.upper())
+print(company.capitalize())
+print(company.title())
+print(company.swapcase)
+
+split=company[7:]
+print(split)
+
+print(company.find('Coding'))
+print('Coding' in 'Coding for all')
+sub_string_two = 'Coding'
+print(company.index(sub_string_two))
+print(company.replace('Coding','Python'))
+company_two='Python For Everyone'
+print(company_two.replace('Everyone','All'))
+print(company.split(' '))
+companies="Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(companies.split(', '))
+print(company[0])
+print(company[13])
+print(company[10])
+
+print(company_two.split(' '))
+print(company.split(' '))
+first_letter_everyone=company_two[0]
+second_letter_everyone=company_two[7]
+third_letter_everyone=company_two[11]
+first_letter_coding=company[0]
+second_letter_coding=company[7]
+third_letter_coding=company[11]
+
+company_abr=first_letter_everyone+second_letter_everyone+third_letter_everyone
+company_two_abr=first_letter_coding+second_letter_coding+third_letter_coding
+print(company_abr)
+print(company_two_abr)
