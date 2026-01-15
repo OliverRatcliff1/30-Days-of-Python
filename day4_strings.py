@@ -303,3 +303,48 @@ company_abr=first_letter_everyone+second_letter_everyone+third_letter_everyone
 company_two_abr=first_letter_coding+second_letter_coding+third_letter_coding
 print(company_abr)
 print(company_two_abr)
+
+sub_string='F'
+print(company.index(sub_string))
+sub_string_three='l'
+print(company.rindex(sub_string_three))
+
+sentence='You cannot end a sentence with because because because is a conjunction'
+print(sentence.index('because'))
+print(sentence.rindex('because'))
+
+start=sentence.index('because')
+end=start+len('because because because')
+print(sentence[start:end])
+
+print(company.startswith('Coding'))
+print(company.endswith('Coding'))
+newcompany=' Coding For All '
+print(newcompany)
+print(newcompany.strip())
+
+list=['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+result='# '.join(list)
+print(result)
+
+multistring='''I am enjoying this challenge.
+I just wonder what is next.'''
+print(multistring)
+
+print('Name\tAge\tCountry\tCity')
+print('Oliver\t24\tEngland\tLondon')
+
+
+radius=10
+area=3.14*radius**2
+print("The area of the circle with a radius {} is {:.0f} meters square".format(radius,area))
+
+a=8
+b=6
+print('{}+{}={}'.format(a,b,a+b))
+print('{}-{}={}'.format(a,b,a-b))
+print('{}*{}={}'.format(a,b,a*b))
+print('{}/{}={}'.format(a,b,a/b))
+print('{}%{}={}'.format(a,b,a%b))
+print('{}//{}={}'.format(a,b,a//b))
+print('{}**{}={}'.format(a,b,a**b))
