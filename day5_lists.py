@@ -155,3 +155,46 @@ fruits = sorted(fruits,reverse=True)
 print(fruits)
 
 # Exercises 
+empty_list=list()
+players=['Messi','Ronaldo','Neymar','Mbappe','Noble']
+print(len(players))
+first_player=players[0]
+print(first_player)
+middle_player=players[len(players)//2] # how to get middle player
+print(middle_player)
+last_player=players[-1]
+print(last_player)
+
+mixed_data_types=['Ollie',24,181,True,'London']
+
+it_companies=['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
+print(it_companies)
+print(len(it_companies))
+
+it_companies[0]='Rocket Labs'
+print(it_companies)
+
+it_companies.append('Intuative I')
+print(it_companies)
+
+it_companies.insert(2,'Nike')
+print(it_companies)
+
+it_companies[0] = it_companies[0].upper()
+print(it_companies)
+
+it_companies_string='#: '.join(it_companies)
+print(it_companies_string)
+
+does_exist='Nike' in it_companies
+print(does_exist)
+
+it_companies.sort()
+print(it_companies)
+it_companies.reverse()
+print(it_companies)
+
+first_three_companies=it_companies[:3]
+print(first_three_companies)
+
+
