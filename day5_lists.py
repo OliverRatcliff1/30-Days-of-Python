@@ -216,3 +216,5 @@ min_age=ages[0]
 print(min_age)
 max_age=ages[-1]
 print(max_age)
+
+ages.append(min_age)
