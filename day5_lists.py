@@ -198,3 +198,21 @@ first_three_companies=it_companies[:3]
 print(first_three_companies)
 
 
+front_end=['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end=['Node','Express', 'MongoDB']
+
+full_stack=front_end+back_end
+print(full_stack)
+
+full_stack.insert(5, 'Python')
+full_stack.insert(6,'SQL')
+print(full_stack)
+
+ages=[19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+ages.sort()
+print(ages)
+min_age=ages[0]
+print(min_age)
+max_age=ages[-1]
+print(max_age)
