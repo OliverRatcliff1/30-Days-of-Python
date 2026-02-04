@@ -218,3 +218,24 @@ max_age=ages[-1]
 print(max_age)
 
 ages.append(min_age)
+ages.append(max_age)
+print(ages)
+ages.sort()
+print(ages)
+mid_age=len(ages)//2
+print(mid_age)
+print(ages[6])
+count=len(ages)
+print(count)
+sum_ages=sum(ages)
+print(sum_ages)
+avg_age=sum_ages/count
+print(avg_age)
+last_age=ages[-1]
+first_age=ages[0]
+age_range=last_age-first_age
+print(age_range)
+
+min_dif
+
+
