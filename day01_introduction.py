@@ -38,6 +38,7 @@ print(type(3.5))
 print(type(4j))
 print(type('Oliver Ratcliff'))
 print(type(['rain','thunder','lightning']))
-print(type(['rain','thunder','lightning']))
+
+
 
 
