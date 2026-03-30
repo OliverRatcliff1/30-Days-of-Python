@@ -5,7 +5,7 @@
 empty_tuple=()
 empty_tuple=tuple()
 
-# tuple with initial values
+# tuple with initial values here 
 fruits = ('banana', 'orange', 'mango', 'lemon')
 print(fruits)
 
