@@ -6,7 +6,7 @@ This is day four.
 Strings are cool.'''
 print(multiline_string)
 
-# We can connect strings together this is called 'Concantenation' 
+# We connect strings together this is called 'Concantenation' 
 first_name = 'Ollie'
 last_name = 'Ratcliff'
 full_name = first_name + ' ' + last_name
