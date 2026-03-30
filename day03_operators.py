@@ -4,7 +4,7 @@
 print('Addition: ', 1+2)
 print('Subtraction: ', 2-1)
 print('Division: ', 4/2)
-print('Multiplication: ',2*3) # division prints a floating number
+print('Multiplication: ',2*3) # division prints a floating num
 print('Division without remainder: ',7//2) # gives without floating number
 print('Modulus: ', 3%2) # Gives the remainder (whats left over)
 print('Exponential: ',2**3) # it means 2*2*2 (power of)
