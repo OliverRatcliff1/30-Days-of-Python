@@ -60,7 +60,7 @@ print(age)
 
 # Checking Data Types
 first_name = 'Oliver' # str
-last_name = 'Ratcliff' # str
+last_name = 'Ratcliff'
 Country = 'England' # str
 city = 'London' # str
 age = 23 # int
