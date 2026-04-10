@@ -92,8 +92,16 @@ student['skills'].append('Football')
 student['skills'].append('Running')
 print(student)
 
-keys = student.keys()
+keys = list(student.keys())
 print(keys)   
 
-values = student.values()
+values = list(student.values())
 print(values) 
+
+items=list(student.items())
+print(items)
+
+del student['marital_status']
+print(student)
+
+del student
